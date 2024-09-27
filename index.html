@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OTP Rush</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header id="nav-box">
+            <div id="nav-right-content">
+                <div id="theme-switch-btn">
+                    <span id="light-mode-icon" class="material-symbols-outlined">light_mode</span>
+                    <span id="dark-mode-icon" class="material-symbols-outlined">dark_mode</span>
+                </div>
+                <div id="score-box">
+                    <span>SCORE : <span id="score">0</span></span>
+                </div>
+            </div>
+            <div id="logo-box">
+                <h1 id="logo">OTP Rush</h1>
+            </div>
+        </header>
+
+        <div id="otp-box">
+            <span id="otp-field">000000</span>
+        </div>
+        <div id="input-boxes-box">
+            <input type="number" class="input-boxes" id="inpt-bx-1" maxlength="1">
+            <input type="number" class="input-boxes" id="inpt-bx-2" maxlength="1">
+            <input type="number" class="input-boxes" id="inpt-bx-3" maxlength="1">
+            <input type="number" class="input-boxes" id="inpt-bx-4" maxlength="1">
+            <input type="number" class="input-boxes" id="inpt-bx-5" maxlength="1">
+            <input type="number" class="input-boxes" id="inpt-bx-6" maxlength="1">
+        </div>
+        <div id="submit-button-box">
+            <button id="submit-btn">SUBMIT</button>
+        </div>
+        
+        <button id="genrate-otp-btn">Generate New OTP</button>
+        
+        <div id="custom-alert" class="alert-box">
+            <div class="alert-content">
+                <p id="alert-message"></p>
+                <button id="alert-ok-btn">OK</button>
+            </div>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
